@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Mini Shop</title>
+    <link rel="stylesheet" type="text/css" href="style.css">        
+<body>
+    <div class="container">
+
+    <div class="form-container" id="loginForm">
+            <div class="logo-container">
+                <img src="Arellano_University_logo.png" alt="Arellano University Logo" class="university-logo">
+                <img src="logo.jpg" alt="Miniature Shop Logo" class="shop-logo">
+            </div>
+            <h2>Welcome Back!</h2>
+            <form id="loginForm">
+                <div class="input-group">
+                    <input type="email" id="email" required>
+                    <label>Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" required>
+                    <label>Password</label>
+                </div>
+
+                <div class="form-options">
+                    <label class="checkbox-wrapper">
+                        <input type="checkbox" id="remember">
+                        <span class="custom-checkbox"></span>
+                        Remember me
+                    </label>
+                    <button type="button" class="forgot-btn" onclick="ShowForgetPassword()">Forgot Password?</button>
+                </div>                                       
+<p></p>
+                <button type="submit" class="submit-btn">Login</button>
+                
+                <button type="button" class="register-btn"  onclick="window.location.href='register.html'">Register</button>
+              
+
+            </form>
+            <p id="error-msg" style="color: red;"></p>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

@@ -1,0 +1,3 @@
+case,50,product
+BOOK,150,product
+pencil,10,product

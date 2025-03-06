@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Home Page</title>
+    <style>
+        :root {
+            --primary-color: #2A2A2A;
+            --accent-color: #FF6B6B;
+            --light-bg: #F8F9FA;
+            --dark-text: #2D3436;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--light-bg);
+            color: var(--dark-text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        section{
+            padding: 2rem; 
+        }
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .nav-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+        .homepage{
+         display: flex;
+         align-items: center;
+         min-height: 100vh;
+         background: lightblue;
+        }
+        .homepage .content{
+         max-width: 50rem;
+        }
+        .homepage .content h3{
+            font-size: 2rem;
+            color: black;
+        }
+        .homepage.content h2{
+         font-size: 2rem;
+         color: black;
+        }
+        .homepage.content span{
+            font-size: 1.5;
+            color:var(-- white);
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <header> 
+        <div class="navbar header-content">
+        <a href="#" class="logo">
+        <h2 href="#" class="logo">Mini Shop</h2>
+    </a>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Log out</a></li>                
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="user_dashboard.php" class="nav-link">Products</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link cart-link" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i>               
+                    <span class="cart-count" id="cart-count">0</span>
+                </a></li>
+            </ul>           
+        </nav>
+    </div>
+    </header>
+</div>
+<section class="homepage" id="homepage">
+<div class="content">
+<h3>Mini-stationary shop</h3>
+<h2>Miniature Shop Presented by 12 IT 1</h2>
+<span>Enjoy Shopping</span>
+<a href="user_dashboard.php" class="btn">shop now</a>
+</div>
+
+
+</section>
+</body>
+</html>
